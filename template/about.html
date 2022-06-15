@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Tìm hiểu thêm</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<!-- Font Awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+<body>
+  <div class= "wrapper">
+    <div class="nav">
+      <div class="logo">
+        <h4>
+          Chuẩn đoán bệnh phổi
+        </h4>
+      </div>
+        <div class="links">
+          <a href="/home" class="mainlink">Trang chủ</a>
+          <a  href="/tuberculosis">Lao phổi</a>
+          <a  href="/Pneumonia">Viêm phổi</a>
+          <a  href="/covid_19">Covid 19</a>
+
+        </div>
+      </div>
+
+</div>
+
+<!--      <div class="landing">
+        <div class="landingText">
+          <h1> Stay In. <span style="color:#df5a2a;font-size: 6vw"> Stay Safe.</span> </h1>
+
+          <div class="btn">
+          <a href="/about">Learn more</a>
+        </div>
+      </div>
+    </div> -->
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+<h1>Thông tin chi tiết  : </h1>
+    <h3>Đây là một ứng dụng web y tế dựa trên Deeplearning.</h3>
+    <p>Dự đoán về căn bệnh này được thực hiện với sự trợ giúp của mô hình Deep learning được đào tạo trên hàng nghìn bộ dữ liệu</p>
+    <p>Vì vậy, với đoạn sau, tôi sẽ mô tả về các loại bệnh được sử dụng trong trang web này.</p>
+
+<h2>1.Lao phổi</h2>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="{{ url_for('static', filename='malaria1.jpg') }}">
+   </div>
+<h3>Tổng quan</h3>
+<p>
+Bệnh lao phổi (ho lao) là bệnh truyền nhiễm nguy hiểm, cướp đi sinh mạng của hơn 1,5 triệu người mỗi năm.</p><br>
+<p>Hiện nay, bệnh lao vẫn là một trong những bệnh truyền nhiễm có tỷ lệ tử vong cao nhất thế giới cao hơn cả sốt rét và HIV/AIDS.</p>
+<h3>Triệu chứng :</h3>
+<ul>
+    <li>Ho khan, ho ít, nhiều khi bệnh nhân không để ý mình bị ho từ lúc nào.</li>
+    <li>Ho khạc đờm, đờm thường có màu trắng.</li>
+    <li>Ho ra máu (đờm lẫn máu) số lượng từ ít tới nhiều.</li>
+    <li>Thường hay có triệu chứng khó thở, khám phổi thấy ran ẩm, ran nổ vùng tổn thương.</li>
+  </ul>
+  <br>
+  <hr>
+  <br>
+
+  <h2>2.Viêm phổi</h2>
+  <div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="{{ url_for('static', filename='Pneumonia.jpg') }}">
+   </div>
+  <p>Viêm phổi là tình trạng nhiễm trùng ở một hoặc cả hai phổi. Nó có thể do vi khuẩn, vi rút hoặc nấm gây ra. Viêm phổi do vi khuẩn là loại phổ biến nhất ở người lớn. Viêm phổi gây ra tình trạng viêm các túi khí trong phổi của bạn, được gọi là phế nang.</p><p>
+  </p><h3>Triệu chứng</h3>
+ <p> Các triệu chứng phổ biến bao gồm:</p>
+<ul>
+    <li>Ho</li>
+    <li>Đờm rỉ hoặc xanh, hoặc đờm, ho ra do sốt phổi</li>
+    <li>Thở gấp và khó thở</li>
+    <li>Ớn lạnh</li>
+    <li>Đau ngực thường trầm trọng hơn khi hít thở sâu, được gọi là đau màng phổi</li>
+    <li>Tim đập nhanh</li>
+    <li>Mệt mỏi và suy nhược</li>
+    <li>Buồn nôn và ói mửa</li>
+    <li>Bệnh tiêu chảy</li>
+    <li>Đổ mồ hôi 1 cách bất thường</li>
+    <li>Đau đầu</li>
+    <li>đau cơ</li>
+    <li>Lú lẫn hoặc mê sảng, đặc biệt là ở người lớn tuổi
+    Da sẫm màu hoặc đỏ tía, hoặc tím tái do máu kém oxy</li>
+</ul>
+<p>Các triệu chứng có thể khác nhau tùy thuộc vào các tình trạng cơ bản khác và loại viêm phổi.</p><br><hr>
+<br>
+<hr>
+<!--
+<h3>How is Machine and Deep Learning Models are employed in the medical field ?</h3>
+<p>Find out ! </p>
+<br>
+
+<footer class="white-section" id="footer">
+  <div class="contain">
+    <i class="social-icon fab fa-facebook-f"></i>
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon fas fa-envelope"></i>
+
+  </div>
+</footer>
+
+<div style="text-align: center; margin-top: 20px">
+    <iframe src="https://www.youtube.com/watch?v=VKnoyiNxflk" width="853" height="480" frameborder="0" allowfullscreen=""></iframe>
+  </div> -->
+	</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <p><b>Tác giả :</b></p>
+      <p>Nguyễn Đức Danh || Lê Quang Minh <br></p>
+
+
+
+
+</body></html>
